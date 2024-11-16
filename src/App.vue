@@ -1,30 +1,51 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import Grid from './components/Grid.vue'
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="top-section">
+    <h1>Top Section</h1>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <div class="middle-section">
+    <Grid />
+  </div>
+  <div class="bottom-section">
+    <h3>Bottom Section</h3>
+  </div>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+<style>
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.top-section {
+  flex: 0 0 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.middle-section {
+  flex: 0 0 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-section {
+  flex: 0 0 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div,p,h1,h2,h3 {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
 }
 </style>
