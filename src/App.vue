@@ -47,14 +47,14 @@ button {
 }
 
 .middle-section {
-  flex: 0 0 80%;
+  flex: 0 0 75%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .bottom-section {
-  flex: 0 0 10%;
+  flex: 0 0 15%;
   display: flex;
   justify-content: center;
   align-items: center;
